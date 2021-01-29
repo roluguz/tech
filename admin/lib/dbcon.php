@@ -6,12 +6,12 @@ function dbcon(){
  
   $host = 'localhost';
 	$usr = 'root';
-	$psw = '';
-	$db = 'thesis';
+	$psw = 'the_reborn';
+	$db = 'ghys';
 	$conection = @mysqli_connect($host,$usr,$psw,$db);
 	//$cnx = @mysqli_connect($host,$usr,$psw,$db);
 	if(!$conection){
-		echo "Error en la conexión,(bdsisgea) no existe....";
+		echo "Error en la conexión,(ghyss) no existe....";
 		exit();
 	}
   return $conection;
@@ -21,12 +21,12 @@ function dbcon(){
 }
 
 function host(){
-	$h = "http://".$_SERVER['HTTP_HOST']."/thesis/";
+	$h = "http://".$_SERVER['HTTP_HOST']."/ghys/";
 	return $h;
 }
 
 function hRoot(){
-	$url = $_SERVER['DOCUMENT_ROOT']."/thesis/";
+	$url = $_SERVER['DOCUMENT_ROOT']."/ghys/";
 	return $url;
 }
 

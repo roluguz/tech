@@ -2,9 +2,9 @@
 //core
 function dbcon(){
 	$user = "root";
-	$pass = "";
+	$pass = "the_reborn";
 	$host = "localhost";
-	$db = "thesis";
+	$db = "ghys";
 	mysql_connect($host,$user,$pass);
 	mysql_select_db($db);
 }
